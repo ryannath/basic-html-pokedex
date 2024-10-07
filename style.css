@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.base-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.two-column-layout {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: red;
+  flex: 1;
+}
+
+.main-content {
+  background-color: grey;
+  flex: 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pokemon-card {
+  padding: 1rem;
+  box-shadow: 1px salmon;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.pokemon-name-title {
+  text-transform: capitalize;
+}
